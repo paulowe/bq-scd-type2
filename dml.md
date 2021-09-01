@@ -32,7 +32,3 @@ A MERGE DML statement does not conflict with other concurrently running DML stat
 - If updates or deletions generally happen on older data, or within a particular range of dates, consider partitioning your tables
 - If you often update rows where one or more columns fall within a narrow range of values, consider using clustered tables. Clustering ensures that changes are limited to specific sets of blocks, reducing the amount of data that needs to be read and written.
 
-# To Collect:
-
-Information about update patterns (generally on older data? or within range of dates?
-
