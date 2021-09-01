@@ -24,11 +24,15 @@ WHEN NOT matched THEN INSERT
        (
               product_id,
               product_name,
-              quantity
+              quantity,
+              start_date,
+              end_date
        )
         VALUES
         (
                sub.product_id,
                sub.product_name,
-               sub.quantity
+               sub.quantity,
+               CURRENT_DATE(),
+               NULL
          );
